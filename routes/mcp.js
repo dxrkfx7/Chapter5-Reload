@@ -5432,6 +5432,46 @@ app.post(
   },
 );
 
+app.post(
+  "/fortnite/api/game/v2/profile/*/client/RedeemRealMoneyPurchases",
+  async (req, res) => {
+    ApplyProfileChanges = [{
+      "changeType": "statModified",
+      "name": "in_app_purchases",
+      "value": {
+        "receipts": [],
+        "ignoredReceipts": [],
+        "fulfillmentCounts": {},
+        "refreshTimers": {
+          "MicrosoftStore": {
+            "nextEntitlementRefresh": "9999-12-01T21:10:00.000Z"
+          },
+          "SamsungGalaxyAppStore": {},
+          "EpicPurchasingService": {
+            "nextEntitlementRefresh": "9999-12-01T21:10:00.000Z"
+          }
+        },
+        "version": 1
+      }
+    },
+    {
+      "changeType": "statModified",
+      "name": "subscriptions",
+      "value": []
+    }]
+    res.json({
+      profileRevision: profile.rvn || 0,
+      profileId: req.query.profileId,
+      profileChangesBaseRevision: BaseRevision,
+      profileChanges: ApplyProfileChanges,
+      profileCommandRevision: profile.commandRevision || 0,
+      serverTime: new Date().toISOString(),
+      responseVersion: 1,
+    });
+  }
+)
+
+
 function checkFields(fields, body) {
   let missingFields = { fields: [] };
 

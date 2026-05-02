@@ -11,6 +11,10 @@ app.get("/friends/api/v1/*/settings", (req, res) => {
     res.json({});
 });
 
+app.get("/epic/friends/v1/:accountId/blocklist", (req, res) => {
+    res.json({ "blocked": [] });
+});
+
 app.get("/friends/api/v1/*/blocklist", (req, res) => {
     res.json([]);
 });

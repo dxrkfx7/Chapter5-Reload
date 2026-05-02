@@ -24,7 +24,7 @@ app.post("/api/v1/fortnite-br/surfaces/motd/target", async (req, res) => {
         })
     } catch (err) {}
 
-    res.json(motdTarget)
+    //res.json(motdTarget)
 })
 
 module.exports = app;

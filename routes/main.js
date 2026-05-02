@@ -1,4 +1,4 @@
-const express = require("express");
+﻿const express = require("express");
 const functions = require("../structs/functions.js");
 const fs = require("fs");
 const app = express.Router();
@@ -67,6 +67,18 @@ app.get("/launcher/api/public/assets/*", async (req, res) => {
     },
     assetId: "FortniteContentBuilds",
   });
+});
+
+app.put("/profile/play_region", (req, res) => {
+    res.status(204).end();
+});
+
+app.get("/api/v2/interactions/latest/:accountId", (req, res) => {
+    res.json([]);
+});
+
+app.post("/datarouter/api/v1/public/data", (req, res) => {
+    res.status(204).end();
 });
 
 app.get("/Builds/Fortnite/Content/CloudDir/*.manifest", async (req, res) => {
