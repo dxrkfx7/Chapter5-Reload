@@ -2,50 +2,74 @@
   "//": "BR Item Shop Config",
   "daily1": {
     "itemGrants": [
-      "AthenaCharacter:CID_139_Athena_Commando_M_FighterPilot"
+      "AthenaCharacter:CID_A_044_Athena_Commando_F_NeonCatFashion_64JW3"
     ],
-    "price": 1500
+    "price": 999999
   },
   "daily2": {
     "itemGrants": [
-      "AthenaCharacter:CID_318_Athena_Commando_M_Demon"
+      "AthenaCharacter:Character_TigerFashionDale"
     ],
-    "price": 1500
+    "price": 1200
   },
   "daily3": {
     "itemGrants": [
-      "AthenaDance:EID_DustingHands"
+      "AthenaDance:EID_Unbound"
     ],
     "price": 200
   },
   "daily4": {
     "itemGrants": [
-      "AthenaBackpack:BID_120_Werewolf"
+      "AthenaBackpack:Backpack_GatorCeladon_Bass"
     ],
-    "price": 2000
+    "price": 1200
   },
   "daily5": {
     "itemGrants": [
-      "AthenaGlider:Glider_ID_115_SnowNinja"
+      "AthenaGlider:Glider_PolarityWinn"
     ],
-    "price": 800
+    "price": 1200
   },
   "daily6": {
     "itemGrants": [
-      "AthenaPickaxe:Pickaxe_ID_174_LuckyRider"
+      "AthenaPickaxe:Pickaxe_FinchVisit"
+    ],
+    "price": 1200
+  },
+  "daily7": {
+    "itemGrants": [
+      "AthenaLoadingscreen:LoadingScreen_Nocturnal"
+    ],
+    "price": 500
+  },
+  "daily8": {
+    "itemGrants": [
+      "AthenaEmoji:Emoji_S24_Nebula"
+    ],
+    "price": 200
+  },
+  "daily9": {
+    "itemGrants": [
+      "AthenaSpray:Spray_PartyUpQuest2"
     ],
     "price": 800
   },
   "featured1": {
     "itemGrants": [
-      "AthenaCharacter:CID_301_Athena_Commando_M_Rhino"
+      "AthenaCharacter:Character_MechanicalEngineerRev"
     ],
-    "price": 1500
+    "price": 1200
   },
   "featured2": {
     "itemGrants": [
-      "AthenaCharacter:CID_378_Athena_Commando_M_FurnaceFace"
+      "AthenaCharacter:CID_A_221_Athena_Commando_M_Relish_8364H"
     ],
-    "price": 2000
+    "price": 1500
+  },
+  "featured3": {
+    "itemGrants": [
+      "AthenaDance:EID_InkHoop"
+    ],
+    "price": 200
   }
 }
