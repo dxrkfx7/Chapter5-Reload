@@ -1,5 +1,5 @@
 @echo off
-title Better Reload
+title Ch5 Reload
 
 if not exist "node_modules\" (
     echo node_modules not found. Installing dependencies...
